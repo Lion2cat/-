@@ -7,6 +7,7 @@ import ChatPage from './src/ChatPage';
 import SetPage from './src/SetPage';
 import LanguagePage from './src/LanguagePage';
 import { ThemeProvider } from './components/ThemeContext';
+import ARCarDemo from './src/ARCarDemo';
 import { View, Text } from 'react-native';
 import i18n, { addLocaleChangeListener } from './locales/i18n';
 
@@ -35,6 +36,7 @@ const AppContent = () => {
         <Stack.Screen name="Chat" component={ChatPage} options={{ title: i18n.t('chat') }} />
         <Stack.Screen name="Settings" component={SetPage} options={{ title: i18n.t('setting') }} />
         <Stack.Screen name="Help" component={HelpScreen} options={{ title: i18n.t('help') }} />
+        <Stack.Screen name="ARCarDemo" component={ARCarDemo} options={{ title: 'AR Car Demo' }} />
         <Stack.Screen name="Language" component={LanguagePage} options={{ title: i18n.t('language') }} />
       </Stack.Navigator>
     </NavigationContainer>
